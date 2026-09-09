@@ -1,8 +1,8 @@
-# Dual Pixel Studio Link for Unity & Godot
+# PixelSync Link for Unity & Godot
 
 Stop emailing yourself sprite sheets. Stop breaking your workflow.
 
-The **Dual Pixel Studio Link** is a lightweight, single-script bridge that connects your game engine directly to the **Dual Pixel Studio** app on your iPad or iPhone over your local Wi-Fi network. 
+The **PixelSync Link** is a lightweight, single-script bridge that connects your game engine directly to the **PixelSync** app on your mobile device over your local Wi-Fi network. 
 
 Every pixel you draw and frame you animate updates instantly inside your game scene. No cables, no manual exporting, no hassle.
 
@@ -27,24 +27,23 @@ Every pixel you draw and frame you animate updates instantly inside your game sc
 ## Quick Start Guide
 
 ### 1. Get the App (It's Free)
-Download **Dual Pixel Studio** on your iPad or iPhone. It's a professional-grade pixel art editor built specifically for indie game devs. (Zero ads, zero subscriptions).
+Download **PixelSync** on your App Store / Google Play Store. It's a professional-grade pixel art editor built specifically for indie game devs. 
 
-**[Download 'Dual Pixel Studio' on the App Store]**
 
 ### 2. Connect & Start the Server
-1. In the **Dual Pixel Studio app**, open your project and tap the **Engine Sync (Gamepad Icon)** in the toolbar of a canvas to start the local server.
+1. In the **PixelSync app**, open your project and tap the **Engine Sync (Gamepad Icon)** in the toolbar of a canvas to start the local server.
 
 ---
 
 ### 3A. Unity Setup
-1. Download the `DualPixelStudioLink.cs` file from this repository.
+1. Download the `PixelSync.cs` file from this repository.
 2. Drag and drop the script into your Unity project. 
-   *(Important: It must be placed inside an `Editor` folder, e.g., `Assets/Editor/DualPixelStudioLink.cs`)*
-3. In Unity, open the bridge window by navigating to: `Tools > Dual Pixel Studio Link`.
+   *(Important: It must be placed inside an `Editor` folder, e.g., `Assets/Editor/PixelSync.cs`)*
+3. In Unity, open the bridge window by navigating to: `Tools > PixelSync Link`.
 4. Your device should appear automatically under "Available Devices." Click it to connect!
 
 ### 3B. Godot Setup
-1. Download the `DualPixelStudioLink.gd` file from the `Godot` folder in this repository.
+1. Download the `PixelSync.gd` file from the `Godot` folder in this repository.
 2. Drag it into your Godot project.
 3. Select a `Sprite2D` or `TextureRect` node in your scene and attach the script to it.
 4. Run your game—the script will automatically discover your device and fetch the live texture!
@@ -53,7 +52,7 @@ Download **Dual Pixel Studio** on your iPad or iPhone. It's a professional-grade
 
 ## How It Works (The Technical Details)
 
-The Engine Bridge works by communicating with a lightweight HTTP server hosted locally within the Dual Pixel Studio app on your mobile device.
+The Engine Bridge works by communicating with a lightweight HTTP server hosted locally within the PixelSync app on your mobile device.
 
 ### Supported Endpoints:
 The bridge pulls data seamlessly via the following local endpoints:
